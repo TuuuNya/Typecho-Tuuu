@@ -1,3 +1,30 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title><?php $this->options->title(); ?> | <?php $this->options->description() ?></title>
+    <?php if ($this->is('post')) : ?>
+    <link rel="stylesheet" href="<?php $this->options->themeUrl('css/needsharebutton.min.css') ?>">
+    <?php endif; ?>
+    <link rel="stylesheet" href="<?php $this->options->themeUrl('css/normalize.css') ?>">
+    <link rel="stylesheet" href="<?php $this->options->themeUrl('css/fontello.css') ?>">
+    <link rel="stylesheet" href="<?php $this->options->themeUrl('css/style.css'); ?>">
+    <!--[if lt IE 9]><script language="javascript" type="text/javascript" src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+    <?php if ($this->is('post')) : ?>
+    <!--正文宽度-->
+    <style type="text/css">.layout-fixed { max-width: 740px; }</style>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/highlight.js/9.12.0/styles/atom-one-light.min.css">
+    <?php endif; ?>
+
+    <?php $this->header(); ?>
+</head>
+<body>
+
 <div class="site-header">
 
     <h1 class="site-title"><a href="<?php $this->options->siteUrl(); ?>"><?php $this->options->title() ?></a></h1>
@@ -5,7 +32,6 @@
         <div class="nav-menu">
             <ul>
                 <li><a href="<?php $this->options->siteUrl(); ?>">首页</a></li>
-                <li><a href="#">文章</a></li>
                 <li><a href="#">归档</a></li>
                 <li><a href="#">关于</a></li>
                 <li><a href="#">友链</a></li>

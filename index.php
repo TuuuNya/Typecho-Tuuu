@@ -8,21 +8,7 @@
  * @link http://www.hackersb.cn
  */
 ?>
-<!doctype html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title><?php $this->options->title(); ?> | <?php $this->options->description() ?></title>
-    <link rel="stylesheet" href="<?php $this->options->themeUrl('css/normalize.css') ?>">
-    <link rel="stylesheet" href="<?php $this->options->themeUrl('css/fontello.css') ?>">
-    <link rel="stylesheet" href="<?php $this->options->themeUrl('css/style.css'); ?>">
-    <!--[if lt IE 9]><script language="javascript" type="text/javascript" src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-    <?php $this->header(); ?>
-</head>
-<body>
+
 
 <!--header-->
 <?php include('header.php'); ?>
@@ -92,8 +78,3 @@
 <!--footer-->
 <?php include('footer.php'); ?>
 <!--footer end-->
-
-<script src="<?php $this->options->themeUrl('js/jquery.min.js') ?>"></script>
-<script src="<?php $this->options->themeUrl('js/main.js') ?>"></script>
-</body>
-</html>
