@@ -11,9 +11,7 @@
             'tag'       =>  _t('标签 %s 下的文章'),
             'author'    =>  _t('%s 发布的文章')
         ), '', ' | '); ?><?php $this->options->title(); ?></title>
-    <?php if ($this->is('post')) : ?>
-        <link rel="stylesheet" href="<?php $this->options->themeUrl('css/needsharebutton.min.css') ?>">
-    <?php endif; ?>
+    <link rel="stylesheet" href="<?php $this->options->themeUrl('plugins/share.js/css/share.min.css') ?>">
     <link rel="stylesheet" href="<?php $this->options->themeUrl('css/normalize.css') ?>">
     <link rel="stylesheet" href="<?php $this->options->themeUrl('css/fontello.css') ?>">
     <link rel="stylesheet" href="<?php $this->options->themeUrl('css/style.css'); ?>">
@@ -104,9 +102,6 @@
                                     <a href="<?php $this->author->permalink(); ?>"><?php $this->author(); ?></a>
                                 </span>
                                 </div>
-                                <div class="share sharer-0 need-share-button" data-share-icon-style="box" data-share-position="bottomCenter" data-share-networks="weibo,wechat,qqzone,Twitter" style="display: block;">
-                                    <label class="entypo-export"><span>分享该文章</span></label>
-                                </div>
                             </div>
                         </header>
                     </div>
@@ -115,6 +110,7 @@
                         <div class="entry-content">
                             <?php $this->content(); ?>
 
+                            <div class="social-share"></div>
                             <aside class="about-author">
                                 <h3>WRITTEN BY</h3>
                                 <div class="author-bio">

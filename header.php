@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title><?php $this->options->title(); ?> | <?php $this->options->description() ?></title>
     <?php if ($this->is('post')) : ?>
-    <link rel="stylesheet" href="<?php $this->options->themeUrl('css/needsharebutton.min.css') ?>">
+    <link rel="stylesheet" href="<?php $this->options->themeUrl('plugins/share.js/css/share.min.css') ?>">
     <?php endif; ?>
     <link rel="stylesheet" href="<?php $this->options->themeUrl('css/normalize.css') ?>">
     <link rel="stylesheet" href="<?php $this->options->themeUrl('css/fontello.css') ?>">

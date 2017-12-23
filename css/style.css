@@ -228,13 +228,13 @@ img {
     max-width: 100%;
     height: auto;
 }
-.entry-content a:not(.button){
+.entry-content a:not(.button):not('social-share-icon'){
     margin: 0 4px;
     color: #777;
     font-weight: bold;
     border-bottom: 2px solid #ddd;
 }
-.entry-content a:not(.button):hover {
+.entry-content a:not(.button)::not('social-share-icon')hover {
     border-bottom: 2px solid #333;
 }
 a:hover, .entry-content a:hover {
@@ -563,39 +563,6 @@ a:hover, .entry-content a:hover {
     color: #777;
 }
 /*post.html share*/
-.share.sharer-0 {
-    width: 110px;
-    height: 20px;
-    user-select: none;
-    position: fixed;
-    top: 90px;
-    right: 60px;
-    margin: 0;
-    z-index: 999;
-    color: #fff;
-}
-.share.sharer-0 label.entypo-export {
-    display: inline;
-    letter-spacing: 0;
-    background: #fff;
-    border: 2px solid rgba(0, 0, 0, 0.65);
-}
-.share.sharer-0 label {
-    font-size: 16px;
-    cursor: pointer;
-    margin: 0;
-    padding: 5px 10px;
-    border-radius: 5px;
-    color: #333;
-    -webkit-transition: all .3s ease;
-    transition: all .3s ease;
-}
-.need-share-button_dropdown-bottom-center{
-    margin-top: -32px;
-}
-.need-share-button_dropdown [class*=" icon-weibo"]:before, .need-share-button_dropdown [class^=icon-weibo]:before{
-    font-family:'fontello'!important;
-}
 .post-thumbnail + div .entry-content {
     padding-top: 4.4em;
 }
@@ -804,8 +771,15 @@ form p {
     width: 50px;
 }
 .comment-list>.page-navigator li a:hover {
-    background: #ddd;
+    background: #fff;
 }
 .comment-list>.page-navigator .current {
     background: #ccc;
+}
+.social-share {
+    margin-top: 3em;
+    text-align: center;
+}
+.social-share a:before {
+    font-family:'socialshare'!important;
 }
