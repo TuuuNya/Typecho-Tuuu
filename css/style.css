@@ -804,5 +804,8 @@ form p {
     width: 50px;
 }
 .comment-list>.page-navigator li a:hover {
-    background: #fff;
+    background: #ddd;
+}
+.comment-list>.page-navigator .current {
+    background: #ccc;
 }
