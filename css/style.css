@@ -789,3 +789,20 @@ form p {
     color: #aaa;
     margin: .2em 0;
 }
+.comment-list>.page-navigator {
+    text-align: center;
+    font-size: 1.1em;
+}
+.comment-list>.page-navigator li {
+    padding: 0;
+    display: inline-block;
+    background: #ededed;
+}
+.comment-list>.page-navigator li a {
+    display: inline-block;
+    line-height: 40px;
+    width: 50px;
+}
+.comment-list>.page-navigator li a:hover {
+    background: #fff;
+}
