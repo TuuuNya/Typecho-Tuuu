@@ -24,8 +24,8 @@
                     if (get_postthumb($this)){
                         echo get_postthumb($this);
                     } else {
-                        $rand_num = rand(1,2);
-                        $this->options->themeUrl("img/${rand_num}.jpeg");
+                        $rand_num = rand(1,10);
+                        $this->options->themeUrl("img/${rand_num}.jpg");
                     }
                     ?>);">
                         <header class="entry-header">

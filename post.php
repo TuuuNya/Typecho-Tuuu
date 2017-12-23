@@ -74,8 +74,8 @@
                 if (get_postthumb($this)){
                     echo get_postthumb($this);
                 } else {
-                    $rand_num = rand(1,2);
-                    $this->options->themeUrl("img/${rand_num}.jpeg");
+                    $rand_num = rand(1,10);
+                    $this->options->themeUrl("img/${rand_num}.jpg");
                 }
                 ?>);">
                     <header class="entry-header">
@@ -101,9 +101,6 @@
                                     <i class="icon-user-outline"></i>
                                     <a href="<?php $this->author->permalink(); ?>"><?php $this->author(); ?></a>
                                 </span>
-                            </div>
-                            <div class="share sharer-0 need-share-button" data-share-icon-style="box" data-share-position="bottomCenter" data-share-networks="weibo,wechat,qqzone,Twitter" style="display: block;">
-                                <label class="entypo-export"><span>分享该文章</span></label>
                             </div>
                         </div>
                     </header>
@@ -141,8 +138,8 @@
                 if (get_postthumb($this)){
                     echo get_postthumb($this);
                 } else {
-                    $rand_num = rand(1,2);
-                    $this->options->themeUrl("img/${rand_num}.jpeg");
+                    $rand_num = rand(1,10);
+                    $this->options->themeUrl("img/${rand_num}.jpg");
                 }
                 ?>);">
                     <header class="entry-header">
