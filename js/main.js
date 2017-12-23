@@ -5,7 +5,7 @@
         $('html').toggleClass('is-search-toggled-on');
         $('html').removeClass('is-social-toggled-on');
         if($('html').hasClass('is-search-toggled-on')) {
-            $('.search-container input[type="search"]').trigger('focus');
+            $('.search-container input[name="s"]').trigger('focus');
         }
     });
     $('.search-container *').click(function(e) {

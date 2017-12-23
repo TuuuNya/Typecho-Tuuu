@@ -41,10 +41,10 @@
     <div class="search-container easing">
         <a class="icon-search-toggle toggle-link"></a>
         <div class="search-box">
-            <form action="#">
+            <form action="">
                 <label>
                     <span class="screen-reader-text">搜索：</span>
-                    <input type="search" name="search" id="search-field" placeholder="type and hit enter …">
+                    <input type="text" name="s" id="search-field" placeholder="type and hit enter …">
                 </label>
                 <input type="submit" class="search-submit" value="Search">
             </form>

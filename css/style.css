@@ -14,6 +14,7 @@ body {
     background: #cceeff;
 }
 a {
+    color: #333;
     text-decoration: none;
     outline: none;
     background: transparent;
@@ -740,4 +741,50 @@ form p {
 }
 .comment-respond a{
     color: #333;
+}
+.entry-title i {
+    font-weight: 400;
+}
+.blog-simple ul {
+    margin: 0;
+    padding: 2em 0 0 0;
+    list-style: none;
+}
+.blog-simple ul .hentry {
+    padding: 2em 0 1em 0;
+}
+.blog-simple ul .entry-header {
+    padding: 0;
+}
+.blog-simple .entry-meta .cat-links a {
+    padding: 4px 12px;
+    margin-right: 12px;
+}
+.entry-meta .cat-links a {
+    padding: 6px 16px;
+    display: inherit;
+    margin-bottom: .8em;
+    font-size: 11px;
+    border-radius: 16px;
+    border: 1px solid #ccc;
+    text-transform: uppercase;
+}
+.entry-meta a, .nav-single a, .comment-meta a, .comment-reply-link, .navigation a, .post-pagination a, .related-posts a, .archives a, .tabs .tab-titles li a {
+    color: #666;
+}
+.entry-meta a:hover, .nav-single a:hover, .navigation a:hover, .post-pagination a:hover, .archives a:hover, .entry-content a.more-link:hover, .archives-tag.post-list a:hover, .tagcloud a:hover, .related-posts ol li a:hover {
+    color: #333;
+    border-color: #333;
+}
+.blog-simple ul h1 {
+    font-size: 1.9em;
+    letter-spacing: 0px;
+}
+.entry-title a:hover {
+    color: #333;
+    text-decoration: underline;
+}
+.blog-simple ul p {
+    color: #aaa;
+    margin: .2em 0;
 }
