@@ -303,6 +303,10 @@ a:hover, .entry-content a:hover {
     display: inline-block;
     padding: 0;
 }
+.nav-menu ul li a:hover {
+    text-decoration: none;
+    box-shadow: 0 1px;
+}
 .search-container {
     display: inline-block;
     float: right;
