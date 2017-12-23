@@ -55,9 +55,15 @@
     <div class="social-container">
         <div class="textwidget">
             <ul class="social">
-                <li><a href="#" target="_blank" class="icon-weibo"></a></li>
-                <li><a href="#" target="_blank" class="icon-wechat"></a></li>
-                <li><a href="#" target="_blank" class="icon-github-circled"></a></li>
+                <?php if ($this->options->socialWeibo): ?>
+                    <li><a href="<?php $this->options->socialWeibo(); ?>" target="_blank" class="icon-weibo"></a></li>
+                <?php endif; ?>
+                <?php if ($this->options->socialWechat): ?>
+                    <li><a href="<?php $this->options->socialWechat(); ?>" target="_blank" class="icon-wechat"></a></li>
+                <?php endif; ?>
+                <?php if ($this->options->socialGithub): ?>
+                    <li><a href="<?php $this->options->socialGithub(); ?>" target="_blank" class="icon-github-circled"></a></li>
+                <?php endif; ?>
             </ul>
         </div>
     </div>
