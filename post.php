@@ -77,8 +77,8 @@
             <?php while($this->next()): ?>
             <article class="post">
                 <div class="post-thumbnail" style="background-image: url(<?php
-                if (get_postthumb($this)){
-                    echo get_postthumb($this);
+                if (isset($this->fields->bg)){
+                    echo $this->fields->bg;
                 } else {
                     $rand_num = rand(1,10);
                     $this->options->themeUrl("img/${rand_num}.jpg");
@@ -141,8 +141,8 @@
 
             <aside class="read-next">
                 <div class="post-thumbnail" style="background-image: url(<?php
-                if (get_postthumb($this)){
-                    echo get_postthumb($this);
+                if (isset($this->fields->bg)){
+                    echo $this->fields->bg;
                 } else {
                     $rand_num = rand(1,10);
                     $this->options->themeUrl("img/${rand_num}.jpg");
