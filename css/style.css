@@ -563,6 +563,10 @@ a:hover, .entry-content a:hover {
     color: #777;
 }
 /*post.html share*/
+.post-thumbnail {
+    -webkit-background-size: cover;
+    background-size: cover;
+}
 .post-thumbnail + div .entry-content {
     padding-top: 4.4em;
 }

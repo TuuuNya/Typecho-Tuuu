@@ -137,7 +137,14 @@
             <?php endwhile; ?>
 
             <aside class="read-next">
-                <div class="post-thumbnail" style="background-image: url(http://themes.pixelwars.org/readme-wp/wp-content/uploads/2015/10/photo-1435058492117-693a295a2ebc-Custom-1920x1280.jpg);">
+                <div class="post-thumbnail" style="background-image: url(<?php
+                if (get_postthumb($this)){
+                    echo get_postthumb($this);
+                } else {
+                    $rand_num = rand(1,2);
+                    $this->options->themeUrl("img/${rand_num}.jpeg");
+                }
+                ?>);">
                     <header class="entry-header">
                         <div class="layout-fixed">
                             <h3>NEXT READING</h3>
