@@ -1,6 +1,6 @@
 <?php
 /**
- * 移植并优化自Readme主题
+ * 一套超级简洁的Typecho主题
  *
  * @package Tuuu Theme
  * @author 王松_Tuuu
