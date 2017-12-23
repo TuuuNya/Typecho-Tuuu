@@ -69,44 +69,47 @@
                 <div class="blog-simple">
                     <header class="entry-header">
                         <h1 class="entry-title">
-                            Searched for <i>"<?php $this->archiveTitle(array(
-                                    'search'    =>  _t('%s'),
-                                ), '', ''); ?>"</i>
+                            <?php $this->archiveTitle(array(
+                                'category'  =>  _t('分类 <i>"%s"</i> 下的文章'),
+                                'search'    =>  _t('包含关键字 <i>"%s"</i> 的文章'),
+                                'tag'       =>  _t('标签 <i>"%s"</i> 下的文章'),
+                                'author'    =>  _t('<i>"%s"</i> 发布的文章')
+                            ), '', ''); ?>
                         </h1>
                     </header>
                     <ul>
                         <?php if ($this->have()): ?>
-                        <?php while($this->next()): ?>
-                        <li>
-                            <article class="post hentry">
-                                <header class="entry-header">
-                                    <div class="entry-meta">
+                            <?php while($this->next()): ?>
+                                <li>
+                                    <article class="post hentry">
+                                        <header class="entry-header">
+                                            <div class="entry-meta">
                                         <span class="cat-links">
                                             <?php $this->category(''); ?>
                                         </span>
-                                    </div>
-                                    <h1 class="entry-title">
-                                        <a href="<?php $this->permalink() ?>"><?php $this->title() ?></a>
-                                    </h1>
-                                    <p><?php $this->excerpt(200, '...'); ?></p>
-                                    <div class="entry-meta">
+                                            </div>
+                                            <h1 class="entry-title">
+                                                <a href="<?php $this->permalink() ?>"><?php $this->title() ?></a>
+                                            </h1>
+                                            <p><?php $this->excerpt(200, '...'); ?></p>
+                                            <div class="entry-meta">
                                         <span class="entry-date">
                                             <i class="icon-clock"></i>
                                             <a href="#"><?php $this->date('Y-m-d'); ?></a>
                                         </span>
-                                        <span class="comment-link">
+                                                <span class="comment-link">
                                             <i class="icon-comment"></i>
                                             <a href="#"><?php $this->commentsNum('%d'); ?> 条评论</a>
                                         </span>
-                                        <span class="author">
+                                                <span class="author">
                                             <i class="icon-user-outline"></i>
                                             <a href="<?php $this->author->permalink(); ?>"><?php $this->author(); ?></a>
                                         </span>
-                                    </div>
-                                </header>
-                            </article>
-                        </li>
-                        <?php endwhile; ?>
+                                            </div>
+                                        </header>
+                                    </article>
+                                </li>
+                            <?php endwhile; ?>
                         <?php endif; ?>
                     </ul>
 
