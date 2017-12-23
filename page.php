@@ -35,8 +35,10 @@
         <div class="nav-menu">
             <ul>
                 <li><a href="<?php $this->options->siteUrl(); ?>">首页</a></li>
-                <li><a href="#">关于</a></li>
-                <li><a href="#">友链</a></li>
+                <?php $this->widget('Widget_Contents_Page_List')->to($pages); ?>
+                <?php while($pages->next()): ?>
+                    <li><a href="<?php $pages->permalink(); ?>"><?php $pages->title(); ?></a></li>
+                <?php endwhile; ?>
             </ul>
         </div>
     </div>
