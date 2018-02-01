@@ -228,13 +228,13 @@ img {
     max-width: 100%;
     height: auto;
 }
-.entry-content a:not(.button):not('social-share-icon'){
+.entry-content a{
     margin: 0 4px;
     color: #777;
     font-weight: bold;
     border-bottom: 2px solid #ddd;
 }
-.entry-content a:not(.button)::not('social-share-icon')hover {
+.entry-content a:not(.social-share-icon):hover {
     border-bottom: 2px solid #333;
 }
 a:hover, .entry-content a:hover {
