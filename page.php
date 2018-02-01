@@ -92,7 +92,7 @@
                                 </span>
                                 </div>
                                 <h1 class="entry-title">
-                                    <a href="<?php $this->permalink() ?>"><?php $this->title() ?></a>
+                                    <?php $this->title() ?>
                                 </h1>
                                 <div class="entry-meta">
                                 <span class="entry-date">
