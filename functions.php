@@ -7,6 +7,8 @@ function themeConfig($form) {
     $form->addInput($socialGithub);
     $socialWeibo = new Typecho_Widget_Helper_Form_Element_Text('socialWeibo', NULL, NULL, _t('Weibo'), _t('请输入微博地址'));
     $form->addInput($socialWeibo);
+    $siteStat = new Typecho_Widget_Helper_Form_Element_Textarea('siteStat', NULL, NULL, _t('统计代码'), _t('在这里填入网站统计代码'));
+    $form->addInput($siteStat);
 }
 
 //获取题图

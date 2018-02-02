@@ -16,5 +16,10 @@
     });
 </script>
 
+<!--统计代码-->
+<?php if ($this->options->siteStat): ?>
+    <?php echo $this->options->siteStat(); ?>
+<?php endif; ?>
+
 </body>
 </html>
