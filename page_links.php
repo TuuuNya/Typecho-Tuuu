@@ -1,6 +1,6 @@
 <?php
 /**
- * 友情链接模板
+ * 友情链接
  *
  * @package custom
  */
